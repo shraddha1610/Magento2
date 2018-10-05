@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+<modules>
+<Shraddha_CreateAdminController>
+<version>1.0.0</version>
+</Shraddha_CreateAdminController>
+</modules>
+<global>
+<helpers>
+<shraddha_createadmincontroller>
+<!-- Helper definition needed by Magento -->
+<class>Mage_Core_Helper</class>
+</shraddha_createadmincontroller>
+</helpers>
+</global>
+<admin>
+<routers>
+<adminhtml>
+<args>
+<modules>
+<foo_bar before="Mage_Adminhtml">Shraddha_CreateAdminController_Adminhtml</foo_bar>
+</modules>
+</args>
+</adminhtml>
+</routers>
+</admin>
+</config>
