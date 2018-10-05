@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<menu>
+<mycustomtab module="shraddha_createadmincontroller" translate="title">
+<title>My Custom Tab</title>
+<sort_order>100</sort_order>
+<children>
+<index module="shraddha_createadmincontroller" translate="title">
+<title>Index Action</title>
+<sort_order>1</sort_order>
+<children>
+<index translate="title">
+<title>Index</title>
+<sort_order>1</sort_order>
+</index>
+<list module="shraddha_createadmincontroller" translate="title">
+<title>List </title>
+<sort_order>2</sort_order>
+<action>adminhtml/custom/List</action>
+</list>
+</children>
+<action>adminhtml/custom</action>
+</index>
+<list module="shraddha_createadmincontroller" translate="title">
+<title>List Action</title>
+<sort_order>2</sort_order>
+<action>adminhtml/custom/list</action>
+</list>
+</children>
+</mycustomtab>
+</menu>
+<acl>
+<resources>
+<admin>
+<children>
+<custom translate="title" module="shraddha_createadmincontroller">
+<title>My Controller</title>
+<sort_order>-100</sort_order>
+<children>
+<index translate="title">
+<title>Index Action</title>
+<sort_order>1</sort_order>
+</index>
+<children>
+<index translate="title">
+<title>Index Action</title>
+<sort_order>1</sort_order>
+</index>
+</children>
+</children>
+<children>
+<list translate="title">
+<title>List Action</title>
+<sort_order>2</sort_order>
+</list>
+</children>
+</custom>
+</children>
+</admin>
+</resources>
+</acl>
+</config>
